@@ -16,5 +16,5 @@ Supports Industrial Voltage up to 24V DC
 Arduino Compatibility
 PLC functionality
 
-Datasheet:   https://drive.google.com/open?id=1q0D1f14A_vs3H4tW74VrREiSKpCdfDo5&usp=drive_fs
-User Guide:  https://drive.google.com/open?id=1pvOths900E182vd_ecIUHEvoXlLinxhO&usp=drive_fs
+Datasheet:   https://norvi.lk/docs/datasheet-esp-hmi-5c-vi/
+User Guide:  https://norvi.lk/docs/user-guide-esp-hmi-5c-vi/
