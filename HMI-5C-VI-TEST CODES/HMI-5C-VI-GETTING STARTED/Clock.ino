@@ -1,9 +1,3 @@
-//*** Print the Clock Interface on the HMI interface **//
-.
-.
-.
-................................................................................
-
 /*
    Arduino Watch Lite Version
    You may find full version at: https://github.com/moononournation/ArduinoWatch
