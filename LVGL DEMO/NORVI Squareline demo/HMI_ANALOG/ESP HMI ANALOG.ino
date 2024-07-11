@@ -4,7 +4,7 @@
 // Define the I2C address for the ADS1115
 #define ADS1115_ADDR2 0x48
 
-Adafruit_ADS1115 ads2(ADS1115_ADDR2);
+Adafruit_ADS1115 ads2;
 
 void setup() {
   Serial.begin(9600);
