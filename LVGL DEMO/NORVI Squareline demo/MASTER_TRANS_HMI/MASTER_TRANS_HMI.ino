@@ -92,7 +92,7 @@ void setup()
   setPinMode(GPIO7, OUTPUT);
   setPinMode(GPIO8, OUTPUT);
  
-  node.begin(5, Serial1);                           //Slave ID as 1
+  node.begin(5, Serial1);                           //Slave ID as 5
   node.preTransmission(preTransmission);
   node.postTransmission(postTransmission);
 }
