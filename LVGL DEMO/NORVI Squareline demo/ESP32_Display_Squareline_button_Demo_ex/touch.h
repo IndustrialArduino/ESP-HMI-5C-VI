@@ -22,29 +22,29 @@
 // #define TOUCH_MAP_Y2 480
 
 /* uncomment for GT911 */
-// #define TOUCH_GT911
-// #define TOUCH_GT911_SCL 20//20
-// #define TOUCH_GT911_SDA 19//19
-// #define TOUCH_GT911_INT -1//-1
-// #define TOUCH_GT911_RST -1//38
-// #define TOUCH_GT911_ROTATION ROTATION_NORMAL
-// #define TOUCH_MAP_X1 800//480
-// #define TOUCH_MAP_X2 0
-// #define TOUCH_MAP_Y1 480//272
-// #define TOUCH_MAP_Y2 0
+#define TOUCH_GT911
+#define TOUCH_GT911_SCL 20//20
+#define TOUCH_GT911_SDA 19//19
+#define TOUCH_GT911_INT 42//-1
+#define TOUCH_GT911_RST -1//38
+#define TOUCH_GT911_ROTATION ROTATION_NORMAL
+#define TOUCH_MAP_X1 800//480
+#define TOUCH_MAP_X2 0
+#define TOUCH_MAP_Y1 480//272
+#define TOUCH_MAP_Y2 0
 
 /* uncomment for XPT2046 */
- #define TOUCH_XPT2046
- #define TOUCH_XPT2046_SCK 12
- #define TOUCH_XPT2046_MISO 13
- #define TOUCH_XPT2046_MOSI 11
- #define TOUCH_XPT2046_CS 39
- #define TOUCH_XPT2046_INT 42
- #define TOUCH_XPT2046_ROTATION 2
- #define TOUCH_MAP_X1 270
- #define TOUCH_MAP_X2 3800
- #define TOUCH_MAP_Y1 3600
- #define TOUCH_MAP_Y2 330
+//  #define TOUCH_XPT2046
+//  #define TOUCH_XPT2046_SCK 12
+//  #define TOUCH_XPT2046_MISO 13
+//  #define TOUCH_XPT2046_MOSI 11
+//  #define TOUCH_XPT2046_CS 39
+//  #define TOUCH_XPT2046_INT 42
+//  #define TOUCH_XPT2046_ROTATION 2
+//  #define TOUCH_MAP_X1 270
+//  #define TOUCH_MAP_X2 3800
+//  #define TOUCH_MAP_Y1 3600
+//  #define TOUCH_MAP_Y2 330
 
 int touch_last_x = 0, touch_last_y = 0;
 
@@ -115,7 +115,7 @@ void touch_init()
   ts.registerTouchHandler(touch);
 
 #elif defined(TOUCH_GT911)
-  Wire.begin(TOUCH_GT911_SDA, TOUCH_GT911_SCL);
+  //Wire.begin(TOUCH_GT911_SDA, TOUCH_GT911_SCL);
   ts.begin();
   ts.setRotation(TOUCH_GT911_ROTATION);
 

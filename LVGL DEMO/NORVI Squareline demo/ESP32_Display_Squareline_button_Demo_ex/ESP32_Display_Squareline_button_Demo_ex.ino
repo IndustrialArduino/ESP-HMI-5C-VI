@@ -147,23 +147,23 @@ void my_touchpad_read(lv_indev_drv_t *indev_driver, lv_indev_data_t *data)
 
 void button_on(lv_event_t * e)
 {
-  writeOutput(GPIO5, 1);
-  writeOutput(GPIO6, 1);
-  writeOutput(GPIO7, 1);
-  writeOutput(GPIO8, 1);
+  // writeOutput(GPIO5, 1);
+  // writeOutput(GPIO6, 1);
+  // writeOutput(GPIO7, 1);
+  // writeOutput(GPIO8, 1);
   Serial.println( "on" );
 
 }
 
 void button_off(lv_event_t * e)
 {
-  writeOutput(GPIO5, 0);
-  writeOutput(GPIO6, 0);
-  writeOutput(GPIO7, 0);
-  writeOutput(GPIO8, 0);
+  // writeOutput(GPIO5, 0);
+  // writeOutput(GPIO6, 0);
+  // writeOutput(GPIO7, 0);
+  // writeOutput(GPIO8, 0);
   Serial.println( "off" );
 
-  delay(300);
+  //delay(300);
 }
 
 void setup()
@@ -180,8 +180,8 @@ void setup()
   digitalWrite(17, LOW);
   pinMode(18, OUTPUT);
   digitalWrite(18, LOW);
-  pinMode(42, OUTPUT);
-  digitalWrite(42, LOW);
+  // pinMode(42, OUTPUT);
+  // digitalWrite(42, LOW);
 #elif defined(Display_43)
   pinMode(20, OUTPUT);
   digitalWrite(20, LOW);
